@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Kaomoji View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="KaomojiViewController" customModule="Kaomoji" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Ssj-Tv-71W">
+                                <rect key="frame" x="166" y="28" width="269" height="29"/>
+                                <segments>
+                                    <segment title="Face"/>
+                                    <segment title="Mouth"/>
+                                    <segment title="Eye"/>
+                                    <segment title="Hands"/>
+                                    <segment title="Holds"/>
+                                </segments>
+                                <connections>
+                                    <action selector="selectKaomojiAdjustment:" destination="BYZ-38-t0r" eventType="valueChanged" id="pOR-kv-bmf"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OB1-sJ-jh1">
+                                <rect key="frame" x="259" y="529" width="83" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="2tl-uI-jpg"/>
+                                    <constraint firstAttribute="height" constant="30" id="PEX-Oj-8tg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Copy!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="2tl-uI-jpg"/>
+                                        <exclude reference="PEX-Oj-8tg"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="copyKaomoji:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F4K-nd-FUx"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="l5i-s1-H0I">
+                                <rect key="frame" x="254" y="64" width="93" height="29"/>
+                                <segments>
+                                    <segment title="Right"/>
+                                    <segment title="Left"/>
+                                </segments>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="( ^ _ ^ )" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="50" translatesAutoresizingMaskIntoConstraints="NO" id="jLg-Px-202">
+                                <rect key="frame" x="197" y="100" width="206.5" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="1M6-Gq-gdK"/>
+                                    <constraint firstAttribute="width" constant="235" id="2Qh-hb-owg"/>
+                                    <constraint firstAttribute="width" constant="235" id="4ne-je-dGv"/>
+                                    <constraint firstAttribute="height" constant="77" id="67b-6f-QmM"/>
+                                    <constraint firstAttribute="width" constant="164" id="8m5-8Q-BMC"/>
+                                    <constraint firstAttribute="width" constant="235" id="ALy-um-CCG"/>
+                                    <constraint firstAttribute="width" constant="207" id="EY2-xb-fVn"/>
+                                    <constraint firstAttribute="width" constant="207" id="GWz-Oz-29e"/>
+                                    <constraint firstAttribute="height" constant="77" id="IUB-zP-5jS"/>
+                                    <constraint firstAttribute="height" constant="77" id="MUD-Fp-UyR"/>
+                                    <constraint firstAttribute="height" constant="400" id="MlO-Yr-Zsv"/>
+                                    <constraint firstAttribute="width" constant="207" id="NvC-Ra-bBk"/>
+                                    <constraint firstAttribute="width" constant="235" id="WgT-VH-fYK"/>
+                                    <constraint firstAttribute="width" constant="235" id="aIc-jd-TjX"/>
+                                    <constraint firstAttribute="height" constant="77" id="gtL-M8-dL9"/>
+                                    <constraint firstAttribute="height" constant="77" id="hhX-qH-Oxl"/>
+                                    <constraint firstAttribute="width" constant="334" id="mSE-nX-Q5y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="64"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="1M6-Gq-gdK"/>
+                                        <exclude reference="2Qh-hb-owg"/>
+                                        <exclude reference="4ne-je-dGv"/>
+                                        <exclude reference="67b-6f-QmM"/>
+                                        <exclude reference="8m5-8Q-BMC"/>
+                                        <exclude reference="ALy-um-CCG"/>
+                                        <exclude reference="EY2-xb-fVn"/>
+                                        <exclude reference="GWz-Oz-29e"/>
+                                        <exclude reference="IUB-zP-5jS"/>
+                                        <exclude reference="MUD-Fp-UyR"/>
+                                        <exclude reference="NvC-Ra-bBk"/>
+                                        <exclude reference="WgT-VH-fYK"/>
+                                        <exclude reference="aIc-jd-TjX"/>
+                                        <exclude reference="gtL-M8-dL9"/>
+                                        <exclude reference="hhX-qH-Oxl"/>
+                                        <exclude reference="mSE-nX-Q5y"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="OB1-sJ-jh1" secondAttribute="bottom" constant="169" id="0Sh-Br-ZH1"/>
+                            <constraint firstItem="jLg-Px-202" firstAttribute="centerX" secondItem="Ssj-Tv-71W" secondAttribute="centerX" id="1h0-Q5-xZ3"/>
+                            <constraint firstAttribute="bottom" secondItem="OB1-sJ-jh1" secondAttribute="bottom" constant="20" symbolic="YES" id="2gI-cs-bV6"/>
+                            <constraint firstItem="jLg-Px-202" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3Hw-34-Z2a"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jLg-Px-202" secondAttribute="bottom" constant="262" id="5jB-dN-ayu"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="OB1-sJ-jh1" secondAttribute="bottom" constant="191" id="ARo-uS-Slz"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jLg-Px-202" secondAttribute="bottom" constant="262" id="BcV-So-In3"/>
+                            <constraint firstItem="l5i-s1-H0I" firstAttribute="top" secondItem="Ssj-Tv-71W" secondAttribute="bottom" constant="8" symbolic="YES" id="CpK-lx-bJy"/>
+                            <constraint firstItem="jLg-Px-202" firstAttribute="centerX" secondItem="Ssj-Tv-71W" secondAttribute="centerX" id="G5a-PY-p4U"/>
+                            <constraint firstItem="jLg-Px-202" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="201" id="G67-wc-INu"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jLg-Px-202" secondAttribute="bottom" constant="262" id="HRB-fQ-3Kl"/>
+                            <constraint firstAttribute="centerX" secondItem="jLg-Px-202" secondAttribute="centerX" id="IlG-N4-BBm"/>
+                            <constraint firstItem="l5i-s1-H0I" firstAttribute="centerX" secondItem="Ssj-Tv-71W" secondAttribute="centerX" id="Lqg-Ye-BYa"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jLg-Px-202" secondAttribute="bottom" constant="262" id="OBR-XN-H0z"/>
+                            <constraint firstItem="OB1-sJ-jh1" firstAttribute="top" secondItem="jLg-Px-202" secondAttribute="bottom" constant="41" id="OlJ-83-miN"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jLg-Px-202" secondAttribute="bottom" constant="262" id="RKl-BE-urF"/>
+                            <constraint firstItem="jLg-Px-202" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="204" id="RxM-iN-VQR"/>
+                            <constraint firstItem="Ssj-Tv-71W" firstAttribute="centerX" secondItem="jLg-Px-202" secondAttribute="centerX" id="Ryz-M6-G5R"/>
+                            <constraint firstItem="OB1-sJ-jh1" firstAttribute="centerX" secondItem="l5i-s1-H0I" secondAttribute="centerX" id="X7N-6n-dZ9"/>
+                            <constraint firstItem="OB1-sJ-jh1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="br0-Ag-Fkn"/>
+                            <constraint firstItem="OB1-sJ-jh1" firstAttribute="centerX" secondItem="jLg-Px-202" secondAttribute="centerX" id="d2y-Km-f2Q"/>
+                            <constraint firstItem="jLg-Px-202" firstAttribute="centerX" secondItem="Ssj-Tv-71W" secondAttribute="centerX" id="eMx-Ml-2X0"/>
+                            <constraint firstItem="jLg-Px-202" firstAttribute="centerX" secondItem="Ssj-Tv-71W" secondAttribute="centerX" id="hOs-GK-Inn"/>
+                            <constraint firstItem="jLg-Px-202" firstAttribute="centerX" secondItem="l5i-s1-H0I" secondAttribute="centerX" id="hx7-Nn-5kZ"/>
+                            <constraint firstItem="jLg-Px-202" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="201" id="jWR-fh-TJa"/>
+                            <constraint firstItem="jLg-Px-202" firstAttribute="top" secondItem="l5i-s1-H0I" secondAttribute="bottom" constant="8" symbolic="YES" id="lE7-bo-srs"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jLg-Px-202" secondAttribute="bottom" constant="262" id="nIU-kR-Bpw"/>
+                            <constraint firstItem="Ssj-Tv-71W" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="oIO-8f-hyN"/>
+                            <constraint firstAttribute="centerY" secondItem="jLg-Px-202" secondAttribute="centerY" id="pfT-ed-afQ"/>
+                            <constraint firstItem="jLg-Px-202" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qJh-YV-MbU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ssj-Tv-71W" secondAttribute="trailing" constant="99" id="sXh-rt-DUV"/>
+                            <constraint firstAttribute="centerX" secondItem="Ssj-Tv-71W" secondAttribute="centerX" id="yFT-Mk-K1g"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Ryz-M6-G5R"/>
+                                <exclude reference="sXh-rt-DUV"/>
+                                <exclude reference="yFT-Mk-K1g"/>
+                                <exclude reference="1h0-Q5-xZ3"/>
+                                <exclude reference="3Hw-34-Z2a"/>
+                                <exclude reference="G5a-PY-p4U"/>
+                                <exclude reference="G67-wc-INu"/>
+                                <exclude reference="RxM-iN-VQR"/>
+                                <exclude reference="eMx-Ml-2X0"/>
+                                <exclude reference="hOs-GK-Inn"/>
+                                <exclude reference="hx7-Nn-5kZ"/>
+                                <exclude reference="jWR-fh-TJa"/>
+                                <exclude reference="lE7-bo-srs"/>
+                                <exclude reference="qJh-YV-MbU"/>
+                                <exclude reference="OlJ-83-miN"/>
+                                <exclude reference="d2y-Km-f2Q"/>
+                                <exclude reference="0Sh-Br-ZH1"/>
+                                <exclude reference="5jB-dN-ayu"/>
+                                <exclude reference="ARo-uS-Slz"/>
+                                <exclude reference="BcV-So-In3"/>
+                                <exclude reference="HRB-fQ-3Kl"/>
+                                <exclude reference="OBR-XN-H0z"/>
+                                <exclude reference="RKl-BE-urF"/>
+                                <exclude reference="nIU-kR-Bpw"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="gdf-hH-K5B" appends="YES" id="4to-3S-omc"/>
+                            <outletCollection property="gestureRecognizers" destination="3Pp-dh-oAu" appends="YES" id="mNL-W4-5az"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="copyButtonOutlet" destination="OB1-sJ-jh1" id="S5v-5b-twa"/>
+                        <outlet property="kaomoji" destination="jLg-Px-202" id="bQs-vA-8gW"/>
+                        <outlet property="kaomojiAdjustment" destination="Ssj-Tv-71W" id="gGv-aX-hXr"/>
+                        <outlet property="kaomojiView" destination="8bC-Xf-vdC" id="9jo-mW-z3h"/>
+                        <outlet property="subKaomojiAdjustment" destination="l5i-s1-H0I" id="zOT-l5-1hm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="gdf-hH-K5B">
+                    <connections>
+                        <action selector="tap:" destination="BYZ-38-t0r" id="P5C-Qx-KmX"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="3Pp-dh-oAu">
+                    <connections>
+                        <action selector="panChangeHoldings:" destination="BYZ-38-t0r" id="ucn-sT-Q94"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-116" y="206"/>
+        </scene>
+    </scenes>
+</document>
